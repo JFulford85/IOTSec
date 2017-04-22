@@ -2,7 +2,7 @@ import os
 import subprocess
 import mysql.connector
 
-tsharkCall = ['C:\\Program Files\\WireShark\\tshark.exe', '-a', 'duration:100']
+tsharkCall = ['C:\\Program Files\\WireShark\\tshark.exe', '-a', 'duration:600']
 tsharkOut = open('tshark.txt', 'wb')
 
 tsharkProc = subprocess.call(tsharkCall, stdout = tsharkOut)
